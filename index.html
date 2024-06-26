@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="image">
+        <div id="odin"><img src="img/odin-lined.png">ODIN</div>
+        <p class="credit">Photo by <a class="author" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a class="author" href="https://unsplash.com/">Unsplash</a> </p>
+    </div>
+    <div class="form">
+        <header>
+            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</h1>
+        </header>
+        <form id="form" method="get">
+            <div>
+                <h1>Let's do this!</h1>
+            </div>
+            <div class="inputs">
+                <div class="inputrow">
+                    <div class="inputcol">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="first-name" required>
+                    </div>
+                    <div class="inputcol">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="last-name" required>
+                    </div>
+                </div>
+                <div class="inputrow">
+                    <div class="inputcol">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="inputcol">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone"> 
+                    </div>
+                </div>
+                <div class="inputrow">
+                    <div class="inputcol">  
+                            <label for="pw">PASSWORD</label>
+                            <input type="password" id="pw" name="pw" required>
+                            <p class="error">*Passwords do not match</p>
+                    </div> 
+                    <div class="inputcol">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm" name="pwconfirmed" required>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <button type="submit" form="form">Create Account</button>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
+        </footer>
+    </div>
+</body>
+</html>
